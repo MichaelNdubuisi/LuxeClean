@@ -1,30 +1,54 @@
-export default function Testimonials() {
-  const feedback = [
-    {
-      quote: "LuxeClean transformed my home! The attention to detail is unmatched. Highly recommend!",
-      name: "Amelia Clarke",
-    },
-    {
-      quote: "Our office has never looked better. LuxeClean’s team is professional and thorough.",
-      name: "James Anderson",
-    },
-    {
-      quote: "Exceptional service and results every time. LuxeClean is our go-to for all cleaning needs.",
-      name: "Sophia Lee",
-    },
-  ];
+import React from 'react';
+import { motion } from 'framer-motion';
 
+const testimonials = [
+  {
+    name: "Jane Doe",
+    role: "Homeowner",
+    photo: "/path/to/photo1.jpg",
+    text: "LuxeClean transformed my home! Highly recommend their services."
+  },
+  {
+    name: "John Smith",
+    role: "Business Owner",
+    photo: "/path/to/photo2.jpg",
+    text: "Professional and reliable. My office has never looked better."
+  }
+];
+
+const Testimonials = () => {
   return (
-    <section className="px-6 py-12 bg-[#0f0f0f]">
-      <h3 className="text-xl font-bold mb-6 text-white">What Our Clients Say</h3>
-      <div className="grid md:grid-cols-3 gap-6">
-        {feedback.map((item, i) => (
-          <div key={i} className="bg-[#1a1a1a] p-4 rounded-md shadow text-white">
-            <p className="mb-2 italic">“{item.quote}”</p>
-            <p className="text-sm text-gray-400">- {item.name}</p>
-          </div>
-        ))}
+    <section className="bg-[#121212] py-16 px-6 sm:px-12">
+      <div className="container text-center">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-12 text-yellow-400 drop-shadow-md">What Our Clients Say</h2>
+        <div className="space-y-10 max-w-4xl mx-auto">
+          {testimonials.map((testimonial, index) => (
+            <motion.div
+              key={index}
+              className="bg-[#1a1a1a] p-8 rounded-lg shadow-lg shadow-yellow-400/20"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.3 }}
+              viewport={{ once: true }}
+            >
+              <p className="text-yellow-200 italic mb-6 text-lg leading-relaxed">"{testimonial.text}"</p>
+              <div className="flex items-center justify-center space-x-6">
+                <img
+                  src={testimonial.photo}
+                  alt={`${testimonial.name} photo`}
+                  className="w-14 h-14 rounded-full object-cover border-2 border-yellow-400"
+                />
+                <div>
+                  <p className="font-semibold text-yellow-400 text-lg">{testimonial.name}</p>
+                  <p className="text-gray-400 text-sm">{testimonial.role}</p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
-}
+};
+
+export default Testimonials;

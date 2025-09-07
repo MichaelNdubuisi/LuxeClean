@@ -1,1 +1,35 @@
 @import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-[#0f0f0f] text-white font-sans leading-relaxed;
+    font-size: 16px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-white;
+  }
+  p {
+    @apply text-gray-300;
+  }
+  a {
+    @apply text-yellow-400 hover:text-yellow-300 transition-colors duration-300;
+  }
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .card {
+    @apply bg-[#1a1a1a] rounded-lg shadow-md shadow-black/50 p-6 transition-transform duration-300 hover:scale-[1.03] hover:shadow-yellow-400/30;
+  }
+  .btn-primary {
+    @apply bg-yellow-400 text-black font-semibold rounded-md px-6 py-2 hover:bg-yellow-300 transition duration-300;
+  }
+  .btn-primary-dark {
+    @apply bg-yellow-400 text-black font-semibold rounded-md px-4 py-2 hover:bg-yellow-300 transition duration-300;
+  }
+}

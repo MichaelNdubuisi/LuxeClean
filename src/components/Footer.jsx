@@ -2,61 +2,62 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1a1a1a] text-[#cccccc] px-4 sm:px-6 lg:px-8 py-10 text-sm">
-      <div className="max-w-7xl mx-auto grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+<footer className="bg-[#121212] text-gray-300 px-8 py-12 text-sm border-t border-yellow-400/20">
+      <div className="max-w-7xl mx-auto grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
         
-        {/* Logo / Description */}
+        {/* Logo / Description */} 
         <div>
-          <h3 className="text-yellow-400 text-lg font-semibold mb-3">LuxeClean</h3>
-          <p className="leading-relaxed">
-            Premium cleaning services tailored to luxury homes, offices, and businesses in Los Angeles.
-            Cleanliness with class.
+          <h3 className="text-yellow-400 text-xl font-extrabold mb-4 drop-shadow-md">LuxeClean</h3>
+          <p className="leading-relaxed text-gray-400 max-w-xs">
+            LuxeClean provides premium cleaning services tailored to luxury homes, offices, and businesses in Nigeria.
+            Experience cleanliness with unparalleled class and attention to detail.
           </p>
         </div>
 
-        {/* Contact Info */}
+        {/* Contact Info */} 
         <div>
-          <h4 className="text-white text-base font-semibold mb-3">Contact</h4>
-          <p>LuxeClean Los Angeles</p>
-          <p>123 Beverly Blvd, Suite 202</p>
-          <p>Los Angeles, CA 90036</p>
-          <p className="mt-2">
+          <h4 className="text-white text-lg font-semibold mb-4">Contact</h4>
+          <p>LuxeClean Nigeria</p>
+          <p>12 Adeola Odeku Street, Victoria Island</p>
+          <p>Lagos, Nigeria</p>
+          <p className="mt-3">
             Phone:{" "}
             <a
-              href="tel:+13235556666"
+              href="tel:+2348012345678"
               className="text-yellow-400 hover:underline"
             >
-              +1 (323) 555-6666
+              +234 801 234 5678
             </a>
           </p>
           <p>
             Email:{" "}
             <a
-              href="mailto:la@luxeclean.com"
+              href="mailto:info@luxeclean.ng"
               className="text-yellow-400 hover:underline"
             >
-              la@luxeclean.com
+              info@luxeclean.ng
             </a>
           </p>
         </div>
 
-        {/* Working Hours */}
+        {/* Working Hours */} 
         <div>
-          <h4 className="text-white text-base font-semibold mb-3">Working Hours</h4>
+          <h4 className="text-white text-lg font-semibold mb-4">Working Hours</h4>
           <p>Mon – Fri: 8:00 AM – 6:00 PM</p>
           <p>Saturday: 9:00 AM – 4:00 PM</p>
           <p>Sunday: Closed</p>
         </div>
 
-        {/* Social Media */}
+        {/* Social Media */} 
         <div>
-          <h4 className="text-white text-base font-semibold mb-3">Connect with Us</h4>
-          <div className="flex flex-wrap gap-4 text-yellow-400 text-2xl">
+          <h4 className="text-white text-lg font-semibold mb-4">Connect with Us</h4>
+          <div className="flex flex-wrap gap-6 text-yellow-400 text-3xl">
             <a
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
+              className="hover:text-yellow-300 transition"
             >
               <FaFacebook />
             </a>
@@ -65,6 +66,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter"
+              className="hover:text-yellow-300 transition"
             >
               <FaTwitter />
             </a>
@@ -73,6 +75,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
+              className="hover:text-yellow-300 transition"
             >
               <FaInstagram />
             </a>
@@ -81,6 +84,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
+              className="hover:text-yellow-300 transition"
             >
               <FaLinkedin />
             </a>
@@ -88,8 +92,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mt-10 text-center text-gray-500 text-xs">
-        &copy; {new Date().getFullYear()} LuxeClean Los Angeles. All rights reserved.
+      <div className="mt-12 text-center text-gray-500 text-xs select-none">
+        &copy; {new Date().getFullYear()} LuxeClean Nigeria. All rights reserved.
       </div>
     </footer>
   );

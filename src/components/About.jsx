@@ -23,12 +23,12 @@ const About = () => {
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Our Story</h2>
             <p className="mb-6 text-base md:text-lg text-[#cfcfcf]">
-              LuxClean Services was founded with one mission: to provide specialized cleaning services
+              LuxeClean Services was founded with one mission: to provide specialized cleaning services
               that prioritize quality and customer satisfaction. Our team of dedicated professionals is
               trained to deliver meticulous cleaning solutions, ensuring every space is treated with the utmost respect and attention.
             </p>
             <p className="text-base md:text-lg text-[#cfcfcf]">
-              From hotels to apartments, we have grown into a trusted name in luxury cleaning, thanks to our
+              From residential homes to commercial offices, we have grown into a trusted name in luxury cleaning, thanks to our
               commitment to excellence and attention to detail.
             </p>
           </div>
@@ -70,12 +70,12 @@ const About = () => {
             {
               img: 'https://randomuser.me/api/portraits/women/44.jpg',
               name: 'Sarah L.',
-              text: '“LuxClean transformed my home into a sparkling sanctuary. Their attention to detail and professionalism are second to none.”'
+              text: '“LuxeClean transformed my home into a sparkling sanctuary. Their attention to detail and professionalism are second to none.”'
             },
             {
               img: 'https://randomuser.me/api/portraits/men/45.jpg',
               name: 'James B.',
-              text: '“I am thoroughly impressed with LuxClean’s services. They truly care about their customers and it shows in their work.”'
+              text: '“I am thoroughly impressed with LuxeClean’s services. They truly care about their customers and it shows in their work.”'
             }
           ].map((t, i) => (
             <div
