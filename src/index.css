@@ -1,21 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @layer base {
-  body {
-    @apply bg-[#0f0f0f] text-white font-sans leading-relaxed;
-    font-size: 16px;
+  * {
+    box-sizing: border-box;
   }
+
+  body {
+    @apply bg-gradient-to-br from-[#0f0f0f] via-[#121212] to-[#0f0f0f] text-white font-['Inter'] leading-relaxed;
+    font-size: 16px;
+    background-attachment: fixed;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold text-white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
   }
+
   p {
     @apply text-gray-300;
   }
+
   a {
-    @apply text-yellow-400 hover:text-yellow-300 transition-colors duration-300;
+    @apply text-yellow-400 hover:text-yellow-300 transition-all duration-300;
   }
+
   button {
     @apply cursor-pointer;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #fbbf24;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f59e0b;
   }
 }
 
@@ -23,13 +52,54 @@
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
+
   .card {
-    @apply bg-[#1a1a1a] rounded-lg shadow-md shadow-black/50 p-6 transition-transform duration-300 hover:scale-[1.03] hover:shadow-yellow-400/30;
+    @apply bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-xl shadow-lg shadow-black/70 p-6 transition-all duration-500 hover:scale-[1.02] hover:shadow-yellow-400/20 border border-yellow-400/10 backdrop-blur-sm;
   }
+
   .btn-primary {
-    @apply bg-yellow-400 text-black font-semibold rounded-md px-6 py-2 hover:bg-yellow-300 transition duration-300;
+    @apply bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-semibold rounded-lg px-6 py-3 hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 shadow-lg hover:shadow-yellow-400/50 transform hover:-translate-y-0.5;
   }
+
   .btn-primary-dark {
-    @apply bg-yellow-400 text-black font-semibold rounded-md px-4 py-2 hover:bg-yellow-300 transition duration-300;
+    @apply bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-semibold rounded-lg px-4 py-2 hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 shadow-md hover:shadow-yellow-400/40 transform hover:-translate-y-0.5;
+  }
+
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-lg;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

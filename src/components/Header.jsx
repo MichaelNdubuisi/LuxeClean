@@ -31,7 +31,7 @@ export default function Header() {
         <Link to="/contact" className="hover:text-yellow-400 transition">Contact</Link>
       </nav>
 
-      {/* Desktop Book Now button */} 
+      {/* Desktop Book Now button */}
       <div className="hidden md:block">
         <button
           onClick={() => setIsBookingModalOpen(true)}
@@ -41,7 +41,7 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile dropdown menu */} 
+      {/* Mobile dropdown menu */}
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-[#1a1a1a] flex flex-col items-start px-6 py-6 space-y-3 md:hidden z-50 shadow-lg rounded-b-lg border border-yellow-400/20">
           <Link to="/" className="hover:text-yellow-400 transition" onClick={() => setIsOpen(false)}>Home</Link>

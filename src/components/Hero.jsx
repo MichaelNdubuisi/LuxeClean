@@ -60,7 +60,7 @@ export default function Hero() {
       ></motion.div>
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
+      <div className="absolute inset-0 bg-opacity-40 z-10"></div>
 
       {/* Content */}
       <motion.div
@@ -70,20 +70,20 @@ export default function Hero() {
         animate="visible"
       >
         <motion.h2
-          className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-5 drop-shadow-lg"
+          className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-5 text-glow"
           variants={itemVariants}
         >
           Experience the Luxury of Clean
         </motion.h2>
         <motion.p
-          className="mb-8 max-w-3xl text-base sm:text-lg md:text-xl text-yellow-100 drop-shadow-md"
+          className="mb-8 max-w-3xl text-sm sm:text-base md:text-lg text-yellow-100 drop-shadow-md"
           variants={itemVariants}
         >
           LuxeClean Services offers premium cleaning solutions for those who demand the best. Elevate your space with our meticulous attention to detail and eco-friendly practices.
         </motion.p>
         <motion.button
           onClick={() => navigate('/contact')}
-          className="btn-primary px-8 py-3 text-lg font-semibold"
+          className="btn-primary px-6 py-2 text-base font-semibold"
           variants={buttonVariants}
           whileHover="hover"
           whileTap="tap"

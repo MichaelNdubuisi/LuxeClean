@@ -21,16 +21,16 @@ const About = () => {
       <section className="px-4 md:px-6 py-12 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Our Story</h2>
-            <p className="mb-6 text-base md:text-lg text-[#cfcfcf]">
-              LuxeClean Services was founded with one mission: to provide specialized cleaning services
-              that prioritize quality and customer satisfaction. Our team of dedicated professionals is
-              trained to deliver meticulous cleaning solutions, ensuring every space is treated with the utmost respect and attention.
-            </p>
-            <p className="text-base md:text-lg text-[#cfcfcf]">
-              From residential homes to commercial offices, we have grown into a trusted name in luxury cleaning, thanks to our
-              commitment to excellence and attention to detail.
-            </p>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Our Story</h2>
+          <p className="mb-6 text-sm md:text-base text-[#cfcfcf]">
+            LuxeClean Services was founded with one mission: to provide specialized cleaning services
+            that prioritize quality and customer satisfaction. Our team of dedicated professionals is
+            trained to deliver meticulous cleaning solutions, ensuring every space is treated with the utmost respect and attention.
+          </p>
+          <p className="text-sm md:text-base text-[#cfcfcf]">
+            From residential homes to commercial offices, we have grown into a trusted name in luxury cleaning, thanks to our
+            commitment to excellence and attention to detail.
+          </p>
           </div>
           <div>
             <img

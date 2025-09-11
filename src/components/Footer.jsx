@@ -2,7 +2,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-<footer className="bg-[#121212] text-gray-300 px-8 py-12 text-sm border-t border-yellow-400/20">
+<footer className="glass-effect text-gray-300 px-8 py-12 text-sm border-t border-yellow-400/20">
       <div className="max-w-7xl mx-auto grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
         
         {/* Logo / Description */} 

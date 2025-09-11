@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
+import TwoColumnSection from "./components/TwoColumnSection";
 import ServicesPreview from "./components/ServicesPreview";
 import CallToAction from "./components/CallToAction";
 import Services from "./components/Services";
@@ -24,6 +25,7 @@ function App() {
               <>
                 <Hero />
                 <Features />
+                <TwoColumnSection />
                 <ServicesPreview />
                 <Testimonials />
                 <CallToAction />
